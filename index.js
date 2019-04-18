@@ -22,6 +22,6 @@ console.log(`listening on port ${SERVER_PORT}`)
 
 app.get('/api/products', products_controller.getAll)
 app.get('/api/products/:id', products_controller.getOne)
-app.put('/api/prodcuts/id?desc...', products_controller.update)
+app.put('/api/products/:id', products_controller.update)
 app.post('/api/products', products_controller.create)
 app.delete('/api/products/:id', products_controller.delete)
